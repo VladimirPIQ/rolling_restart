@@ -2,9 +2,9 @@
 from cm_api.api_client import ApiResource
 import time
 import sys
-cm_host = raw_imput ("Enter IP address of CM: ")
-cm_username = raw_imput ("Enter username: ")
-cm_password = raw_imput ("Enter password: ")
+cm_host = raw_input ("Enter IP address of CM: ")
+cm_username = raw_input ("Enter username: ")
+cm_password = raw_input ("Enter password: ")
 
 api = ApiResource(cm_host,server_port=7180, username=cm_username, password=cm_password)
 hosts = api.get_all_hosts()
